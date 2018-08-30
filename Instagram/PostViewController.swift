@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseAuth
 import SVProgressHUD
 
 class PostViewController: UIViewController {

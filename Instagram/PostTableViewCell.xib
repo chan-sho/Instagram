@@ -77,7 +77,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="1ab-xj-5sN" id="087-4M-qMr"/>
-                <outlet property="dateLabel" destination="YyS-9D-uQ6" id="2BX-me-iJb"/>
+                <outlet property="dateLabel" destination="lTx-xh-FQP" id="5V6-VY-yxs"/>
                 <outlet property="likeButton" destination="Kfv-Ci-0hu" id="JRl-av-bgQ"/>
                 <outlet property="likeLabel" destination="Zfg-BF-9sW" id="dds-8b-yJn"/>
                 <outlet property="postImageView" destination="qZ2-xH-zyS" id="UUr-ad-FE7"/>
