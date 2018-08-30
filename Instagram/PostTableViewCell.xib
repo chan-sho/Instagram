@@ -63,9 +63,6 @@
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <state key="normal" title="コメント"/>
-                        <connections>
-                            <action selector="commentButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rN1-DM-oww"/>
-                        </connections>
                     </button>
                 </subviews>
                 <constraints>

@@ -17,10 +17,6 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var commentButton: UIButton!
     
-    @IBAction func commentButton(_ sender: Any) {
-
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

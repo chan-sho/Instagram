@@ -14,16 +14,33 @@ import SVProgressHUD
 class CommentViewController: UIViewController {
     
     @IBOutlet weak var commentUserName: UITextField!
-    @IBOutlet weak var commnetText: UITextView!
+    @IBOutlet weak var commentText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let name = Auth.auth().currentUser?.displayName
         commentUserName.text = "\(name!)"
+        commentUserName.isEnabled = false
+        
+        // Check^^
         print(commentUserName)
-
-        // Do any additional setup after loading the view.
+        
+        // 枠のカラー
+        commentUserName.layer.borderColor = UIColor.black.cgColor
+        // 枠の幅
+        commentUserName.layer.borderWidth = 1.0
+        // 枠を角丸にする場合
+        commentUserName.layer.cornerRadius = 10.0
+        commentUserName.layer.masksToBounds = true
+        
+        // 枠のカラー
+        commentText.layer.borderColor = UIColor.black.cgColor
+        // 枠の幅
+        commentText.layer.borderWidth = 1.0
+        // 枠を角丸にする場合
+        commentText.layer.cornerRadius = 10.0
+        commentText.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
