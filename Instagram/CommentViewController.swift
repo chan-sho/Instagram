@@ -11,13 +11,18 @@ import Firebase
 import FirebaseDatabase
 import SVProgressHUD
 
-class CommentViewController: UIViewController {
+class CommentViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var commentUserName: UITextField!
     @IBOutlet weak var commentText: UITextView!
     
+    
+    @IBOutlet weak var commentPostButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        commentUserName.delegate = self
         
         let name = Auth.auth().currentUser?.displayName
         commentUserName.text = "\(name!)"
@@ -48,15 +53,21 @@ class CommentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // セル内のコメント投稿ボタンがタップされた時に呼ばれるメソッド
+    @objc func commentPostButton(_ sender: UIButton, forEvent event: UIEvent) {
+        print("DEBUG_PRINT: コメント投稿ボタンがタップされました。")
+        if commentText.text == nil {
+            return
+        }
+        else {
+            
+        }
+        
     }
-    */
-
+    
+    @IBAction func cancellButton(_ sender: Any) {
+        // 画面を閉じる
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

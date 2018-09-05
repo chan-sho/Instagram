@@ -173,31 +173,18 @@
                                     <action selector="handleCancelButton:" destination="jYl-2o-VbD" eventType="touchUpInside" id="Fxn-C1-eqc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNe-bR-hhV">
-                                <rect key="frame" x="164" y="420" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="j4n-NP-mBS" kind="show" id="3i2-km-4yq"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Kbe-7Q-BRE" firstAttribute="top" secondItem="S0N-DN-XOy" secondAttribute="top" constant="60" id="MiO-m1-mkc"/>
                             <constraint firstItem="iiK-UQ-RDS" firstAttribute="top" secondItem="JBV-iT-c1A" secondAttribute="bottom" constant="10" id="WmI-Dj-aAK"/>
-                            <constraint firstItem="hNe-bR-hhV" firstAttribute="leading" secondItem="S0N-DN-XOy" secondAttribute="leading" constant="164" id="a5m-2t-19N"/>
                             <constraint firstItem="JBV-iT-c1A" firstAttribute="centerX" secondItem="bz1-F7-XMT" secondAttribute="centerX" id="daN-G3-gTJ"/>
                             <constraint firstItem="iiK-UQ-RDS" firstAttribute="centerX" secondItem="bz1-F7-XMT" secondAttribute="centerX" id="efS-DL-Q6b"/>
                             <constraint firstItem="Kbe-7Q-BRE" firstAttribute="centerX" secondItem="bz1-F7-XMT" secondAttribute="centerX" id="kFn-Qo-PMm"/>
-                            <constraint firstItem="S0N-DN-XOy" firstAttribute="trailing" secondItem="hNe-bR-hhV" secondAttribute="trailing" constant="165" id="nwd-u7-uKU"/>
                             <constraint firstItem="JBV-iT-c1A" firstAttribute="top" secondItem="Kbe-7Q-BRE" secondAttribute="bottom" constant="10" id="qJH-GG-zdd"/>
-                            <constraint firstItem="hNe-bR-hhV" firstAttribute="top" secondItem="iiK-UQ-RDS" secondAttribute="bottom" constant="200" id="ueG-ia-Est"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="S0N-DN-XOy"/>
                     </view>
-                    <connections>
-                        <outlet property="testButton" destination="hNe-bR-hhV" id="bdZ-mV-Dy1"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7IQ-bk-pk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,30 +347,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l28-Ur-2jL">
+                                <rect key="frame" x="37" y="412" width="300" height="40"/>
+                                <state key="normal" title="コメント投稿" backgroundImage="btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcz-iA-KOj">
+                                <rect key="frame" x="37" y="472" width="300" height="40"/>
+                                <state key="normal" title="キャンセル" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="cancellButton:" destination="j4n-NP-mBS" eventType="touchUpInside" id="zMq-LL-nDg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7Iu-lE-OZn" firstAttribute="top" secondItem="DD1-Ii-MLb" secondAttribute="bottom" constant="10" id="58U-n9-ZzF"/>
                             <constraint firstItem="zrL-kx-2xx" firstAttribute="trailing" secondItem="7Iu-lE-OZn" secondAttribute="trailing" constant="10" id="6kh-0r-r2Y"/>
+                            <constraint firstItem="l28-Ur-2jL" firstAttribute="top" secondItem="VxQ-7q-OZg" secondAttribute="bottom" constant="60" id="CbF-9p-hrs"/>
                             <constraint firstItem="VxQ-7q-OZg" firstAttribute="top" secondItem="3V0-t9-nj9" secondAttribute="bottom" constant="10" id="LWH-19-f1V"/>
                             <constraint firstItem="zrL-kx-2xx" firstAttribute="trailing" secondItem="VxQ-7q-OZg" secondAttribute="trailing" constant="10" id="Poj-7n-4QX"/>
                             <constraint firstItem="DD1-Ii-MLb" firstAttribute="top" secondItem="zrL-kx-2xx" secondAttribute="top" constant="20" id="SM9-cV-SSX"/>
+                            <constraint firstItem="l28-Ur-2jL" firstAttribute="centerX" secondItem="Vv6-8k-Plb" secondAttribute="centerX" id="VRk-bj-fb3"/>
                             <constraint firstItem="DD1-Ii-MLb" firstAttribute="leading" secondItem="zrL-kx-2xx" secondAttribute="leading" constant="10" id="WsD-aQ-TFr"/>
                             <constraint firstItem="7Iu-lE-OZn" firstAttribute="leading" secondItem="zrL-kx-2xx" secondAttribute="leading" constant="10" id="gta-J6-Uc2"/>
                             <constraint firstItem="VxQ-7q-OZg" firstAttribute="leading" secondItem="zrL-kx-2xx" secondAttribute="leading" constant="10" id="msd-dU-tHq"/>
+                            <constraint firstItem="pcz-iA-KOj" firstAttribute="centerX" secondItem="Vv6-8k-Plb" secondAttribute="centerX" id="o4p-Qe-m78"/>
+                            <constraint firstItem="pcz-iA-KOj" firstAttribute="top" secondItem="l28-Ur-2jL" secondAttribute="bottom" constant="20" id="smE-oL-gcG"/>
                             <constraint firstItem="3V0-t9-nj9" firstAttribute="top" secondItem="7Iu-lE-OZn" secondAttribute="bottom" constant="20" id="uBb-by-h5l"/>
                             <constraint firstItem="3V0-t9-nj9" firstAttribute="leading" secondItem="zrL-kx-2xx" secondAttribute="leading" constant="10" id="yAv-gp-tnn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zrL-kx-2xx"/>
                     </view>
                     <connections>
+                        <outlet property="cancelButton" destination="pcz-iA-KOj" id="Okn-aF-1QC"/>
+                        <outlet property="commentPostButton" destination="l28-Ur-2jL" id="ig0-k8-EZ8"/>
                         <outlet property="commentText" destination="VxQ-7q-OZg" id="YLD-MK-dQl"/>
                         <outlet property="commentUserName" destination="7Iu-lE-OZn" id="KzH-Aa-H6r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCt-Lb-TJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1470" y="1449"/>
+            <point key="canvasLocation" x="1452" y="740"/>
         </scene>
     </scenes>
     <resources>

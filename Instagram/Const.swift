@@ -2,7 +2,7 @@
 //  Const.swift
 //  Instagram
 //
-//  Created by 高野翔 on 2018/08/30.
+//  Created by 高野翔 on 2018/09/05.
 //  Copyright © 2018年 高野翔. All rights reserved.
 //
 

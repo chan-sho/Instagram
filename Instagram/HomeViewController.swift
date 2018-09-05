@@ -164,8 +164,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @objc func commentHandleButton(_ sender: UIButton, forEvent event: UIEvent) {
         print("DEBUG_PRINT: commentボタンがタップされました。")
-
-        let nextvc = CommentViewController()
-        self.present(nextvc, animated: true, completion: nil)
+        
+        let nextvc = self.storyboard?.instantiateViewController(withIdentifier: "CommentView")
+        self.present(nextvc!, animated: true, completion: nil)
     }
+
 }

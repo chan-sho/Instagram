@@ -11,8 +11,6 @@ import CLImageEditor
 
 class ImageSelectViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate {
     
-    @IBOutlet weak var testButton: UIButton! //テストで一時的に追加
-    
     @IBAction func handleLibraryButton(_ sender: Any) {
         // ライブラリ（カメラロール）を指定してピッカーを開く
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
